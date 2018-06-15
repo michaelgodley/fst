@@ -1,2 +1,2 @@
 # fst
-Stack Boiler Plate
+Full Stack Boiler Plate
