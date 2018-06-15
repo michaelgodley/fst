@@ -1,0 +1,131 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "React Template and Tooling",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "prestart": "echo ************ Starting ************",
+    "start": "webpack-dev-server --hot --inline --config webpack.dev.js --host 0.0.0.0",
+    "startdash": "webpack-dashboard -- webpack-dev-server --hot --inline --config webpack.dev.js",
+    "precommit": "lint-stages && npm run lint && npm test",
+    "pretty": "prettier --write \"src/**/*.js\"",
+    "prelint": "echo ************ Linting ************",
+    "lint": "eslint ./src",
+    "test": "jest ./test",
+    "test:coverage": "npm test -- --coverage",
+    "scan:security": "nsp check",
+    "scan:updates": "ncu",
+    "http-server": "./node_modules/.bin/http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelgodley/react-template.git"
+  },
+  "author": "Mike Godley <michaelgodley@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelgodley/react-template/issues"
+  },
+  "homepage": "https://github.com/michaelgodley/react-template#readme",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-security": "^1.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "husky": "^0.14.3",
+    "jest": "^23.1.0",
+    "lint-staged": "^7.2.0",
+    "node-sass": "^4.9.0",
+    "npm-check-updates": "^2.14.2",
+    "nsp": "^3.2.1",
+    "prettier": "^1.13.5",
+    "react-test-renderer": "^16.4.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.4",
+    "webpack-dashboard": "^2.0.0",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js",
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text"
+    ],
+    "coverageThreshold": {},
+    "testEnvironment": "node",
+    "verbose": true
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:jest/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:security/recommended"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "jest": true,
+      "es6": true,
+      "browser": true
+    },
+    "plugins": [
+      "jest",
+      "jsx-a11y",
+      "react",
+      "security"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "npm run pretty",
+      "git add"
+    ]
+  }
+}
