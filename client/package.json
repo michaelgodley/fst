@@ -8,7 +8,8 @@
     "prestart": "echo ************ Starting ************",
     "start": "webpack-dev-server --hot --inline --config webpack.dev.js --host 0.0.0.0",
     "startdash": "webpack-dashboard -- webpack-dev-server --hot --inline --config webpack.dev.js",
-    "precommit": "lint-stages && npm run lint && npm test",
+    "precommit": "lint-staged",
+    "abc": "&& npm run lint && npm test",
     "pretty": "prettier --write \"src/**/*.js\"",
     "prelint": "echo ************ Linting ************",
     "lint": "eslint ./src",
@@ -46,9 +47,12 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-security": "^1.4.0",
     "html-webpack-plugin": "^3.2.0",
@@ -100,10 +104,24 @@
       "plugin:react/recommended",
       "plugin:jest/recommended",
       "plugin:jsx-a11y/recommended",
-      "plugin:security/recommended"
+      "plugin:security/recommended",
+      "prettier",
+      "prettier/react",
+      "prettier/standard"
+    ],
+    "plugins": [
+      "jest",
+      "jsx-a11y",
+      "react",
+      "security",
+      "prettier",
+      "standard"
     ],
     "parserOptions": {
-      "sourceType": "module"
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
     },
     "env": {
       "node": true,
@@ -111,12 +129,9 @@
       "es6": true,
       "browser": true
     },
-    "plugins": [
-      "jest",
-      "jsx-a11y",
-      "react",
-      "security"
-    ]
+    "rules": {
+      "prettier/prettier": "error"
+    }
   },
   "prettier": {
     "singleQuote": true,
