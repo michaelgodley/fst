@@ -144,7 +144,7 @@
     "trailingComma": "all"
   },
   "lint-staged": {
-    "*.{js,json}": [
+    "*.{jsx,js,json}": [
       "npm run pretty",
       "git add"
     ]

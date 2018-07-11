@@ -1,0 +1,51 @@
+version : '3.3'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: "postgres_server"
+    restart: always
+    env_file: 
+      - ./postgres/.env
+    volumes:
+      - ./postgres/data:/var/lib/postgres/data
+    ports:
+      - "5432:5432"
+  adminer:
+    image: adminer:latest
+    container_name: "adminer"
+    restart: always    
+    ports:
+      - "8080:8080"
+  sample:
+    container_name: sample
+    build:
+      context: ./sample
+      dockerfile: Dockerfile
+    image: sample/nodejs
+    command: npm run dev
+    restart: always
+    stdin_open: true
+    tty: true
+    # Mount volumes to allow code changes without rebuilding container image
+    volumes:
+      - ./sample/.env:/app/.env
+      - ./sample/src:/app/src
+      - ./sample/logs:/app/logs
+      - ./sample/coverage:/app/coverage
+    # Expose ports [Host:Container]
+    ports:
+      - "3000:3000"
+    # Set environment variables from .env
+    env_file:
+      - ./sample/.env
+    # Override any env vars defined in .env
+    # environment:
+      # - PORT=4001
+    hostname: sampleapp
+    links:
+      - postgres
+    networks:
+      default:
+        aliases:
+          - sample.example.com                          
