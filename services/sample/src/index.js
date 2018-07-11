@@ -16,10 +16,9 @@ const app = express();
 app.get('/', (req, res) => res.send('ok'));
 //db();
 
-
 app.listen(3000, () => {
   // app.listen(env.port, () => {
   //  log.info({ mod: 'main' }, `listening on port ${env.port}`);
   //  log.info(`Version: ${process.version}`);
-  console.log('listening on port 3000');
+  console.log('listening on port 3000'); // eslint-disable-line no-console
 });
