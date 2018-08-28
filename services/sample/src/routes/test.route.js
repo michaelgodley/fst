@@ -8,7 +8,7 @@ const router = express.Router();
 const abc = {
   params: {
     id: Joi.number().required(),
-  }
+  },
 };
 // router.get('/test/:id', validate(abc));
 
@@ -22,9 +22,5 @@ router.get('/test/:id', findOne);
 //  req.log.info(`test`);
 //  res.send('OK');
 //});
-
-
-
-
 
 export default router;

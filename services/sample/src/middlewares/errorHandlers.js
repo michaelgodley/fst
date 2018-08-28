@@ -15,6 +15,6 @@ export function errorHandler(err, req, res, next) {
     error: {
       code: err.status,
       message: HttpStatus[err.status || HttpStatus.INTERNAL_SERVER_ERROR],
-    }
+    },
   });
 }

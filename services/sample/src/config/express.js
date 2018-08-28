@@ -1,6 +1,4 @@
 import express from 'express';
-// import path from 'path';
-import HTTPStatus from 'http-status';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import methodOverride from 'method-override';
@@ -12,7 +10,10 @@ import expressStatusMonitor from 'express-status-monitor';
 import env from '../env';
 import log from './logger';
 import { reqLogger, resLogger } from '../middlewares/expressLogHandlers';
-import { notFoundErrorHandler, errorHandler } from '../middlewares/errorHandlers';
+import {
+  notFoundErrorHandler,
+  errorHandler,
+} from '../middlewares/errorHandlers';
 import { validateErrorHandler } from '../middlewares/validateHandlers';
 import routes from '../routes';
 // import { week } from '../utils/utils.js';
