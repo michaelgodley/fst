@@ -1,24 +1,18 @@
-import express from 'express';
+import env from './env';
+import log from './config/logger';
+import app from './config/express';
+import db from './db';
 
-//import env from './config/env';
-//import log from './config/logger';
-//import app from './config/express';
-//import db from './config/db';
+db.User.findAll().then(users => {
+  log.info({ users: users });
+});
+
 //import redis from './config/redis';
 //import aws from './config/aws';
-
 // import mongoose, { Schema } from 'mongoose';
 
-//log.info({ mod: 'main', env: env }, env);
-
-// Express Setup
-const app = express();
-app.get('/', (req, res) => res.send('ok'));
-//db();
-
-app.listen(3000, () => {
-  // app.listen(env.port, () => {
-  //  log.info({ mod: 'main' }, `listening on port ${env.port}`);
-  //  log.info(`Version: ${process.version}`);
-  console.log('listening on port 3000'); // eslint-disable-line no-console
+//app.listen(3000, () => {
+app.listen(env.express.serverHttpPort, env.express.serverHttpAddress, () => {
+  log.info(`App listening on port ${env.express.serverHttpPort}`);
+  log.info(`Version: ${process.version}`);
 });
