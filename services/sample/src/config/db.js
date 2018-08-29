@@ -2,6 +2,10 @@ import Sequelize from 'sequelize';
 import env from '../env';
 import log from './logger';
 
+const loggerSQL = msg => {
+  log.info(msg);
+};
+
 const connection = new Sequelize(
   env.db.sql.database,
   env.db.sql.username,
@@ -16,6 +20,8 @@ const connection = new Sequelize(
       acquire: env.db.sql.pool.acquire,
       idle: env.db.sql.pool.idle,
     },
+    // logging: log.info.bind(log),
+    logging: loggerSQL,
   },
 );
 

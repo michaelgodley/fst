@@ -1,7 +1,7 @@
 import express from 'express';
 import Joi from 'joi';
 import { validate } from '../middlewares/validateHandlers';
-import { findOne } from '../controllers/test.controller';
+import { findAll, findOne } from '../controllers/test.controller';
 
 const router = express.Router();
 
@@ -10,7 +10,8 @@ const abc = {
     id: Joi.number().required(),
   },
 };
-// router.get('/test/:id', validate(abc));
+
+router.get('/test', findAll);
 
 router.get('/test/:id', validate(abc), (req, res, next) => {
   req.log.info(`Middleware test ${req.method}`);

@@ -5,6 +5,7 @@ import db from './db';
 
 db.User.findAll().then(users => {
   log.info({ users: users });
+  //log.info(users);
 });
 
 //import redis from './config/redis';
