@@ -4,7 +4,7 @@ import app from './config/express';
 import db from './db';
 
 db.User.findAll().then(users => {
-  log.info({ users: users });
+  //log.info({ users: users });
   //log.info(users);
 });
 

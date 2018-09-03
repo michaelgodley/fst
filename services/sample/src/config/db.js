@@ -20,7 +20,6 @@ const connection = new Sequelize(
       acquire: env.db.sql.pool.acquire,
       idle: env.db.sql.pool.idle,
     },
-    // logging: log.info.bind(log),
     logging: loggerSQL,
   },
 );
