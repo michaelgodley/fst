@@ -1,6 +1,7 @@
 import env from './env';
 import log from './config/logger';
 import app from './config/express';
+import passport from './config/passport';
 import db from './db';
 
 db.User.findAll().then(users => {

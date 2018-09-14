@@ -3,8 +3,8 @@ import HttpStatus from 'http-status';
 
 // eslint-disable-next-line no-unused-vars
 export function validateErrorHandler(err, req, res, next) {
-  req.log.info('Validation Error');
   if (err.isJoi) {
+    req.log.info(`Validation Error ${err.isJoi}`);
     const error = {
       code: HttpStatus.BAD_REQUEST,
       message: HttpStatus[HttpStatus.BAD_REQUEST],

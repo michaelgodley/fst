@@ -17,6 +17,26 @@ services:
     restart: always    
     ports:
       - "8080:8080"
+  mongo:
+    image: mongo:latest
+    container_name: "mongodb_server"
+    restart: always
+    command:
+      - '-f'
+      - '/etc/mongod.conf'
+    volumes:
+      - ./mongo/mongod.conf:/etc/mongod.conf
+      # - dbdata:/data/db
+      - ./log:/var/log/mongodb
+    ports:
+      - "27017"
+  mongo-express:
+    image: mongo-express:latest
+    container_name: "mongo_express"
+    env_file:
+      - ./mongo-express/.env
+    ports:
+      - "8081:8081"
   sample:
     container_name: sample
     build:

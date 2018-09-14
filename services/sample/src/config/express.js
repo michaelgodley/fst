@@ -16,7 +16,6 @@ import {
 } from '../middlewares/errorHandlers';
 import { validateErrorHandler } from '../middlewares/validateHandlers';
 import routes from '../routes';
-// import { week } from '../utils/utils.js';
 
 // Express Setup
 const app = express();

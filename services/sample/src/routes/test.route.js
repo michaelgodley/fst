@@ -5,23 +5,13 @@ import { findAll, findOne } from '../controllers/test.controller';
 
 const router = express.Router();
 
-const abc = {
+const schema = {
   params: {
     id: Joi.number().required(),
   },
 };
 
 router.get('/test', findAll);
-
-router.get('/test/:id', validate(abc), (req, res, next) => {
-  req.log.info(`Middleware test ${req.method}`);
-  next();
-});
-
-router.get('/test/:id', findOne);
-//router.get('/test/:id', (req, res) => {
-//  req.log.info(`test`);
-//  res.send('OK');
-//});
+router.get('/test/:id', validate(schema), findOne);
 
 export default router;

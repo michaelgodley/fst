@@ -11,6 +11,14 @@ const envVarsSchema = Joi.object().keys({
   EXPRESS_SERVER_HTTP_ADDRESS: Joi.string()
     .ip({ version: ['ipv4', 'ipv6'], cidr: 'optional' })
     .default('0.0.0.0'),
+  EXPRESS_COOKIE_DOMAIN: Joi.string().default('example.com'),
+  // EXPRESS_COOKIE_EXPIRES:
+  // EXPRESS_COOKIE_MAXAGE:
+  EXPRESS_COOKIE_HTTPONLY: Joi.boolean().default(true),
+  EXPRESS_COOKIE_PATH: Joi.string().default('/'),
+  EXPRESS_COOKIE_SECURE: Joi.boolean().default(true),
+  EXPRESS_COOKIE_SIGNED: Joi.boolean().default(true),
+  EXPRESS_COOKIE_SAMESITE: Joi.boolean().default(true),
 });
 
 const envVars = Joi.validate(process.env, envVarsSchema, {
@@ -35,6 +43,16 @@ const env = {
   serverHttpEnabled: envVars.value.EXPRESS_SERVER_HTTP_ENABLED,
   serverHttpPort: envVars.value.EXPRESS_SERVER_HTTP_PORT,
   serverHttpAddress: envVars.value.EXPRESS_SERVER_HTTP_ADDRESS,
+  cookie: {
+    domain: envVars.EXPRESS_COOKIE_DOMAIN,
+    // expires: envVars.EXPRESS_COOKIE_EXPIRES,
+    // maxAge: envVars.EXPRESS_COOKIE_MAXAGE,
+    httpOnly: envVars.EXPRESS_COOKIE_HTTPONLY,
+    path: envVars.EXPRESS_COOKIE_PATH,
+    secure: envVars.EXPRESS_COOKIE_SECURE,
+    signed: envVars.EXPRESS_COOKIE_SIGNED,
+    sameSite: envVars.EXPRESS_COOKIE_SAMESITE,
+  },
 };
 
 export default env;
