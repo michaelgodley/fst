@@ -21,15 +21,15 @@ services:
     image: mongo:latest
     container_name: "mongodb_server"
     restart: always
-    command:
-      - '-f'
-      - '/etc/mongod.conf'
-    volumes:
-      - ./mongo/mongod.conf:/etc/mongod.conf
+    # command:
+      # - '-f'
+      # - '/etc/mongod.conf'
+    # volumes:
+      # - ./mongo/mongod.conf:/etc/mongod.conf
       # - dbdata:/data/db
-      - ./log:/var/log/mongodb
+      # - ./log:/var/log/mongodb
     ports:
-      - "27017"
+      - "27017:27017"
   mongo-express:
     image: mongo-express:latest
     container_name: "mongo_express"

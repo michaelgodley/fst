@@ -4,7 +4,7 @@ import Joi from 'joi';
 const envVarsSchema = Joi.object({
   MONGO_HOST: Joi.string()
     .hostname()
-    .default('localhost'),
+    .default('mongo'),
   MONGO_PORT: Joi.number().default(27017),
   MONGO_PROTOCOL: Joi.string().default('mongodb'),
   MONGO_DBNAME: Joi.string().default('app'),

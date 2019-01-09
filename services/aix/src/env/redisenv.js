@@ -2,12 +2,11 @@ import Joi from 'joi';
 
 // Create Joi schema to validate env variables
 const envVarsSchema = Joi.object({
-  MONGO_HOST: Joi.string()
+  REDIS_HOST: Joi.string()
     .hostname()
-    .default('localhost'),
-  MONGO_PORT: Joi.number().default(27017),
-  MONGO_PROTOCOL: Joi.string().default('mongodb'),
-  MONGO_DBNAME: Joi.string().default('app'),
+    .default('redis'),
+  REDIS_PORT: Joi.number().default(6379),
+  REDIS_PASSWORD: Joi.string(),
 })
   .unknown()
   .required();
@@ -21,10 +20,9 @@ if (error) {
 
 // Create export object
 const env = {
-  host: envVars.MONGO_HOST,
-  port: envVars.MONGO_PORT,
-  protocol: envVars.MONGO_PROTOCOL,
-  dbname: envVars.MONGO_DBNAME,
+  host: envVars.REDIS_HOST,
+  port: envVars.REDIS_PORT,
+  password: envVars.REDIS_PASSWORD,
 };
 
 export default env;

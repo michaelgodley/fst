@@ -1,0 +1,156 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "Boilerplate server side code",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run -s clean && mkdir -p dist && babel src -s -D -d dist",
+    "prestart": "npm run -s build",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.js --exec \"node -r babel-register\"",
+    "precommit": "lint-staged",
+    "pretty": "prettier --write \"src/**/*.js\"",
+    "prelint": "echo ************ Linting ************",
+    "lint": "eslint ./src",
+    "lint:watch": "esw -w src test",
+    "test": "jest ./src",
+    "test:coverage": "npm test -- --coverage",
+    "scan:security": "nsp check",
+    "scan:updates": "ncu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michselgodley/fst.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "ES6",
+    "ES7",
+    "Postgres",
+    "Mongo"
+  ],
+  "author": "Michael Godley <michaelgodley@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michselgodley/fst/issues"
+  },
+  "homepage": "https://github.com/michselgodley/fst#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "joi": "^13.4.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-core": "latest",
+    "babel-preset-env": "latest",
+    "babel-register": "latest",
+    "cross-env": "latest",
+    "del": "latest",
+    "eslint": "latest",
+    "eslint-config-airbnb": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-config-react-app": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jest": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-security": "latest",
+    "eslint-plugin-standard": "latest",
+    "eslint-watch": "latest",
+    "jest": "latest",
+    "lint-staged": "latest",
+    "nodemon": "latest",
+    "npm-check-updates": "latest",
+    "nsp": "latest",
+    "prettier": "latest",
+    "rimraf": "latest",
+    "supertest": "latest"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          },
+          "debug": true
+        }
+      ]
+    ],
+    "plugins": [
+      "babel-plugin-syntax-object-rest-spread"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:jest/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:security/recommended",
+      "prettier",
+      "prettier/react",
+      "prettier/standard"
+    ],
+    "plugins": [
+      "jest",
+      "jsx-a11y",
+      "react",
+      "security",
+      "prettier",
+      "standard"
+    ],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 8,
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "node": true,
+      "jest": true,
+      "es6": true,
+      "browser": true,
+      "commonjs": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "npm run pretty",
+      "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text"
+    ],
+    "coverageThreshold": {},
+    "testEnvironment": "node",
+    "verbose": true
+  }
+}

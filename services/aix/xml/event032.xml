@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<root>
+
+	<Race>
+
+		<Code>Event032</Code>
+
+		<Classification>U16</Classification>
+
+		<Title>60mH (0.84m/2'9) U16 Boys</Title>
+
+		<DateSched>25/03/2018</DateSched>
+
+		<TimeSched>14:50:00</TimeSched>
+
+		<TimeOff>16:21:02</TimeOff>
+
+		<WR>8.14 Daniel Ryan
+		</WR>
+
+		<Type>Run</Type>
+
+		<Heat number="1"><Status>Official</Status>
+
+		<Racewind>0.0</Racewind>
+
+		<Athlete>
+
+			<Lane>6</Lane>
+
+			<Bib>204</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>1</SortOrder>
+
+			<Rank>1</Rank>
+
+			<Category></Category>
+
+			<AthleteID>204</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>DUNNE Cian</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code="111"></Country>
+
+			<Team code="111"></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>9.21</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records>Q </Records>
+
+			<TimeBehindLeader>0.00</TimeBehindLeader>
+
+		</Athlete>
+
+		<Athlete>
+
+			<Lane>4</Lane>
+
+			<Bib>207</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>2</SortOrder>
+
+			<Rank>2</Rank>
+
+			<Category></Category>
+
+			<AthleteID>207</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>GIBLIN Diarmuid</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code=""></Country>
+
+			<Team code=""></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>9.43</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records>Q </Records>
+
+			<TimeBehindLeader>0.22</TimeBehindLeader>
+
+		</Athlete>
+
+		<Athlete>
+
+			<Lane>2</Lane>
+
+			<Bib>214</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>3</SortOrder>
+
+			<Rank>3</Rank>
+
+			<Category></Category>
+
+			<AthleteID>214</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>FORDE Jack</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code=""></Country>
+
+			<Team code=""></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>9.44</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records>Q </Records>
+
+			<TimeBehindLeader>0.23</TimeBehindLeader>
+
+		</Athlete>
+
+		<Athlete>
+
+			<Lane>7</Lane>
+
+			<Bib>208</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>4</SortOrder>
+
+			<Rank>4</Rank>
+
+			<Category></Category>
+
+			<AthleteID>208</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>COLLINS Hugh</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code=""></Country>
+
+			<Team code=""></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>9.60</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records>q </Records>
+
+			<TimeBehindLeader>0.39</TimeBehindLeader>
+
+		</Athlete>
+
+		<Athlete>
+
+			<Lane>3</Lane>
+
+			<Bib>212</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>5</SortOrder>
+
+			<Rank>5</Rank>
+
+			<Category></Category>
+
+			<AthleteID>212</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>CONNEELY Stephen</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code=""></Country>
+
+			<Team code=""></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>9.62</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records></Records>
+
+			<TimeBehindLeader>0.41</TimeBehindLeader>
+
+		</Athlete>
+
+		<Athlete>
+
+			<Lane>5</Lane>
+
+			<Bib>215</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>6</SortOrder>
+
+			<Rank>6</Rank>
+
+			<Category></Category>
+
+			<AthleteID>215</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>O'SHEA Alex</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code=""></Country>
+
+			<Team code=""></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>9.76</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records></Records>
+
+			<TimeBehindLeader>0.55</TimeBehindLeader>
+
+		</Athlete>
+
+		<Athlete>
+
+			<Lane>8</Lane>
+
+			<Bib>211</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>7</SortOrder>
+
+			<Rank>7</Rank>
+
+			<Category></Category>
+
+			<AthleteID>211</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>AMBROSE Patrick</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code=""></Country>
+
+			<Team code=""></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>10.05</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records></Records>
+
+			<TimeBehindLeader>0.84</TimeBehindLeader>
+
+		</Athlete>
+
+		<Athlete>
+
+			<Lane>1</Lane>
+
+			<Bib>209</Bib>
+
+			<PartCode></PartCode>
+
+			<SortOrder>8</SortOrder>
+
+			<Rank>8</Rank>
+
+			<Category></Category>
+
+			<AthleteID>209</AthleteID>
+
+			<Surname></Surname>
+
+			<Name></Name>
+
+			<DisplayName>FUREY James</DisplayName>
+
+			<TVName></TVName>
+
+			<Pbest></Pbest>
+
+			<Sbest></Sbest>
+
+			<IAAFpnts>0</IAAFpnts>
+
+			<CEpnts>0</CEpnts>
+
+			<TEAMpnts>0</TEAMpnts>
+
+			<Country code=""></Country>
+
+			<Team code=""></Team>
+
+			<QualificationMark></QualificationMark>
+
+			<PB></PB>
+
+			<Time>13.39</Time>
+
+			<TimingType>E</TimingType>
+
+			<Records></Records>
+
+			<TimeBehindLeader>4.18</TimeBehindLeader>
+
+		</Athlete>
+
+	</Heat>
+
+	<Heat number="2"><Status>Official</Status>
+
+	<Racewind>0.0</Racewind>
+
+	<Athlete>
+
+		<Lane>5</Lane>
+
+		<Bib>213</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>1</SortOrder>
+
+		<Rank>1</Rank>
+
+		<Category></Category>
+
+		<AthleteID>213</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>CASEY Darra</DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>9.03</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records>Q </Records>
+
+		<TimeBehindLeader>0.00</TimeBehindLeader>
+
+	</Athlete>
+
+	<Athlete>
+
+		<Lane>4</Lane>
+
+		<Bib>181</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>2</SortOrder>
+
+		<Rank>2</Rank>
+
+		<Category></Category>
+
+		<AthleteID>181</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>FITZPATRICK Nathan </DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>9.05</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records>Q </Records>
+
+		<TimeBehindLeader>0.02</TimeBehindLeader>
+
+	</Athlete>
+
+	<Athlete>
+
+		<Lane>1</Lane>
+
+		<Bib>203</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>3</SortOrder>
+
+		<Rank>3</Rank>
+
+		<Category></Category>
+
+		<AthleteID>203</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>SCHOEMAN Armand</DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>9.05</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records>Q </Records>
+
+		<TimeBehindLeader>0.02</TimeBehindLeader>
+
+	</Athlete>
+
+	<Athlete>
+
+		<Lane>8</Lane>
+
+		<Bib>205</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>4</SortOrder>
+
+		<Rank>4</Rank>
+
+		<Category></Category>
+
+		<AthleteID>205</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>TREHY Conor</DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>9.51</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records>q </Records>
+
+		<TimeBehindLeader>0.48</TimeBehindLeader>
+
+	</Athlete>
+
+	<Athlete>
+
+		<Lane>2</Lane>
+
+		<Bib>198</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>5</SortOrder>
+
+		<Rank>5</Rank>
+
+		<Category></Category>
+
+		<AthleteID>198</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>LAWAL Tessy</DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>9.73</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records></Records>
+
+		<TimeBehindLeader>0.70</TimeBehindLeader>
+
+	</Athlete>
+
+	<Athlete>
+
+		<Lane>7</Lane>
+
+		<Bib>210</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>6</SortOrder>
+
+		<Rank>6</Rank>
+
+		<Category></Category>
+
+		<AthleteID>210</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>O'LOUGHLIN Luke</DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>9.83</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records></Records>
+
+		<TimeBehindLeader>0.80</TimeBehindLeader>
+
+	</Athlete>
+
+	<Athlete>
+
+		<Lane>3</Lane>
+
+		<Bib>206</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>7</SortOrder>
+
+		<Rank>7</Rank>
+
+		<Category></Category>
+
+		<AthleteID>206</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>MITCHELL Darragh</DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>9.97</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records></Records>
+
+		<TimeBehindLeader>0.94</TimeBehindLeader>
+
+	</Athlete>
+
+	<Athlete>
+
+		<Lane>6</Lane>
+
+		<Bib>202</Bib>
+
+		<PartCode></PartCode>
+
+		<SortOrder>8</SortOrder>
+
+		<Rank>8</Rank>
+
+		<Category></Category>
+
+		<AthleteID>202</AthleteID>
+
+		<Surname></Surname>
+
+		<Name></Name>
+
+		<DisplayName>KNIGHT Jordan</DisplayName>
+
+		<TVName></TVName>
+
+		<Pbest></Pbest>
+
+		<Sbest></Sbest>
+
+		<IAAFpnts>0</IAAFpnts>
+
+		<CEpnts>0</CEpnts>
+
+		<TEAMpnts>0</TEAMpnts>
+
+		<Country code=""></Country>
+
+		<Team code=""></Team>
+
+		<QualificationMark></QualificationMark>
+
+		<PB></PB>
+
+		<Time>14.20</Time>
+
+		<TimingType>E</TimingType>
+
+		<Records></Records>
+
+		<TimeBehindLeader>5.17</TimeBehindLeader>
+
+	</Athlete>
+
+</Heat>
+
+</Race>
+
+</root>
+

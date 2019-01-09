@@ -1,4 +1,4 @@
-import dotenv from 'dotenv-safe';
+import dotenv from 'dotenv';
 
 // env values maybe loaded from container environment and will override file values
 // Load dotenv file for environment variables
