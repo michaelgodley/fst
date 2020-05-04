@@ -26,7 +26,9 @@
     "test": "jest -b ./src",
     "test:coverage": "npm test -- --coverage",
     "scan:security": "nsp check",
-    "scan:updates": "ncu"
+    "scan:updates": "ncu",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -159,7 +161,8 @@
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.38.1",
     "sequelize-cli": "^4.1.1",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "babel-cli": "latest",
@@ -190,5 +193,6 @@
     "rimraf": "latest",
     "supertest": "^3.3.0",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
+  "snyk": true
 }
