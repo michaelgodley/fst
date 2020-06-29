@@ -126,7 +126,7 @@
   "dependencies": {
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
-    "bunyan": "^1.8.12",
+    "bunyan": "^1.8.13",
     "bunyan-express-serializer": "^1.0.0",
     "compression": "^1.7.3",
     "cookie-parser": "^1.4.3",
