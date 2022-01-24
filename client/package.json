@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/michaelgodley/react-template#readme",
   "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
